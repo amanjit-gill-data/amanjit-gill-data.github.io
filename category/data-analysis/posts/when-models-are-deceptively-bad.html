@@ -38,17 +38,24 @@
 
  
 
-    <meta name="author" content="Amanjit Gill" />
-    <meta name="description" content="" />
+<meta name="author" content="Amanjit Gill" />
+<meta name="description" content="I was once tasked with fitting some machine learning models in R to a subset of the well-known abalone dataset, then recommending the best one. The aim was to use non-invasive measurements (like dimensions and weight) to classify their sex. Ultimately, I recommended none of the models. Their overall accuracy …" />
+<meta name="keywords" content="">
+
+
   <meta property="og:site_name" content="Amanjit Gill"/>
-  <meta property="og:type" content="blog"/>
-  <meta property="og:title" content="Amanjit Gill"/>
-  <meta property="og:description" content=""/>
+  <meta property="og:title" content="When models are deceptively bad."/>
+  <meta property="og:description" content="I was once tasked with fitting some machine learning models in R to a subset of the well-known abalone dataset, then recommending the best one. The aim was to use non-invasive measurements (like dimensions and weight) to classify their sex. Ultimately, I recommended none of the models. Their overall accuracy …"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content=""/>
+  <meta property="og:url" content="/category/data-analysis/posts/when-models-are-deceptively-bad.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2024-09-17 00:00:00+10:00"/>
+  <meta property="article:modified_time" content="2024-09-17 15:13:15.734973+10:00"/>
+  <meta property="article:author" content="/author/amanjit-gill.html">
+  <meta property="article:section" content="data-analysis"/>
   <meta property="og:image" content="/static/headshot.jpg">
 
-  <title>Amanjit Gill &ndash; Archives</title>
+  <title>Amanjit Gill &ndash; When models are deceptively bad.</title>
 
 
 </head>
@@ -113,28 +120,33 @@
 
 <article class="single">
   <header>
-    <h1 id="archives">Archives</h1>
+      
+    <h1 id="when-models-are-deceptively-bad">When models are deceptively bad.</h1>
+    <p>
+      Posted on Tue 17 Sep 2024 in <a href="/category/data-analysis.html">data-analysis</a>
+
+    </p>
   </header>
+
+
   <div>
-    <dl>
-
-          <dt>Tue 17 Sep 2024</dt>
-
-        <dd>
-          <a href="/category/data-analysis/posts/when-models-are-deceptively-bad.html">When models are deceptively bad.</a>
-        </dd>
-          <dt>Fri 02 Aug 2024</dt>
-
-        <dd>
-          <a href="/category/computing/posts/how-i-keep-my-r-projects-reproducible.html">How I keep my R projects reproducible.</a>
-        </dd>
-          <dt>Wed 20 Dec 2023</dt>
-
-        <dd>
-          <a href="/category/data-analysis/posts/auto-updated-visualisations-of-covid-19-cases-by-geographical-area.html">Auto-updated visualisations of COVID-19 cases by geographical area.</a>
-        </dd>
-    </dl>
+    <p>I was once tasked with fitting some machine learning models in R to a subset of the well-known <a href="https://archive.ics.uci.edu/dataset/1/abalone">abalone dataset</a>, then recommending the best one. The aim was to use non-invasive measurements (like dimensions and weight) to classify their sex. </p>
+<p>Ultimately, I recommended <em>none</em> of the models. Their overall accuracy percentages gave the impression that they performed kind of okay. But really, the models were garbage, as they misclassified nearly <em>all</em> of the female abalone. </p>
+<p>This happened because the dimensions of male and female abalone overlapped too much i.e. they weren't separable. So, unable to differentiate, the models just guessed they were male.</p>
+<p><img alt="Box plots of abalone variables" src="/images/abalone-variables.png"></p>
+<p>It really demonstrated to me that there is more to machine learning than knowing a bit of Python or R. The hard part is being able to see - and admit - that your model is rubbish.</p>
+<p>Source code and report: <a href="https://github.com/amanjit-gill-data/ml-classify-abalone">GitHub</a></p>
   </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+
+
 </article>
 
 <footer>
