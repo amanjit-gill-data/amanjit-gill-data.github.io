@@ -50,7 +50,7 @@
   <meta property="og:url" content="/category/data-analysis/posts/when-models-are-deceptively-bad.html"/>
   <meta property="og:type" content="article"/>
   <meta property="article:published_time" content="2024-09-17 00:00:00+10:00"/>
-  <meta property="article:modified_time" content="2024-09-17 15:13:15.734973+10:00"/>
+  <meta property="article:modified_time" content="2024-09-17 15:23:51.085000+10:00"/>
   <meta property="article:author" content="/author/amanjit-gill.html">
   <meta property="article:section" content="data-analysis"/>
   <meta property="og:image" content="/static/headshot.jpg">
@@ -134,6 +134,7 @@
 <p>Ultimately, I recommended <em>none</em> of the models. Their overall accuracy percentages gave the impression that they performed kind of okay. But really, the models were garbage, as they misclassified nearly <em>all</em> of the female abalone. </p>
 <p>This happened because the dimensions of male and female abalone overlapped too much i.e. they weren't separable. So, unable to differentiate, the models just guessed they were male.</p>
 <p><img alt="Box plots of abalone variables" src="/images/abalone-variables.png"></p>
+<p><em>Note</em>: The 'I' category covers infant abalone whose sex has not yet been determined. </p>
 <p>It really demonstrated to me that there is more to machine learning than knowing a bit of Python or R. The hard part is being able to see - and admit - that your model is rubbish.</p>
 <p>Source code and report: <a href="https://github.com/amanjit-gill-data/ml-classify-abalone">GitHub</a></p>
   </div>
